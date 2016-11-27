@@ -14,3 +14,9 @@ These examples were generated using [Railroad Diagram generator](http://www.bott
 * [EBNF Source](/gremlin-ebnf/gremlin.ebnf)
 * [SVG Diagrams](/gremlin-ebnf/gremlin.xhtml)
 * [PNG Diagrams](/gremlin-ebnf/index.html)
+
+addE modelled with all steps:
+![addE](/gremlin-ebnf/diagram/addE.png)
+
+Alternate addE modelled with from/to and other general edge steps:
+![addE2](/gremlin-ebnf/addE-2.png)

@@ -1,0 +1,25 @@
+
+Gremlin ::= GraphTraversalSource GraphTraversal* Traversal
+
+
+GraphTraversalSource ::= ( withBindings | withBulk | withComputer | withoutStrategies | withPath | withRemote | withSack | withSideEffect | withStrategies )* ( addV | E | inject | V ) 
+
+GraphTraversal ::= ( addE | addV | aggregate | and | as | barrier | both | bothE | bothV | branch | by | cap | choose | coalesce | coin | constant | count | cyclicPath | dedup | drop | emit | filter | flatMap | fold | from | group | groupCount | has | hasId | hasKey | hasLabel | hasNot | hasValue | id | identity | in | inE | inject | inV | is | key | label | limit | local | loops | map | match |  max | mean | min | not | or | order | otherV | out | outE | outV | pageRank | path | peerPressure | program | project | properties | property | propertyMap | range | repeat | sack | sample | select | sideEffect | simplePath | store | subgraph | sum | tail | timeLimit | times | to | toE | toV | tree | unfold | union | until | V | value | valueMap | values | where )
+
+Traversal ::= ( close | explain | fill | forEachRemaining | iterate | next | profile | toList | toSet | toStream | tryNext )
+
+addV ::=  '(' label? ')' ( addE | as | property )?
+
+addE ::=  '(' label? ')' ( as | from | to | property )?
+
+E ::= '(' ids* ')' ( as | drop | property )?
+
+V ::= '(' ids* ')' ( addE | as | drop | out | property )?
+
+as ::= '(' step-label ')'
+
+from ::= '(' step-label ')' edge-steps?
+
+to ::= '(' step-label ')' edge-steps?
+
+edge-steps ::= ( as | from | to | property )?

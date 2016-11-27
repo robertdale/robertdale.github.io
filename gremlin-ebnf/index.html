@@ -1,0 +1,672 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="generator" content="Railroad Diagram Generator 1.45.1338"><style type="text/css" xml:space="preserve">
+    ::-moz-selection
+    {
+      color: #F5FFF0;
+      background: #050F00;
+    }
+    ::selection
+    {
+      color: #F5FFF0;
+      background: #050F00;
+    }      
+    .ebnf a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover
+    {
+      color: #020500;
+      text-decoration: underline;
+    }    
+    .signature
+    {
+      color: #2B8000;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #050F00;
+      background: #F5FFF0;
+    }
+    a:link, a:visited
+    {
+      color: #050F00;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #2B8000;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #2B8000;
+      background: #D4F1C6;
+      color: #2B8000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #020500;
+      background: #E0FFD1;
+      border-color: #020500;       
+    }     
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #050F00;
+    }  
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {     
+      border-bottom: 1px solid #050F00;
+    }
+    #tabs li a.active
+    {
+      color: #050F00;
+      background: #F5FFF0;
+      border-color: #050F00;
+      border-bottom: 1px solid #F5FFF0;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #2B8000;
+      background: #FCFFFA;
+      color: #020500;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden 
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #F5FFF0;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #050F00;
+    }
+    #divs div.ebnf, div.ebnf
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px; 
+      padding-bottom: 2px; 
+      background: #E0FFD1;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #020500;
+      border-right: 1px solid #020500;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #020500;
+      border-left: 1px solid #020500;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style></head>
+   <body>
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="Gremlin">Gremlin:</a></p>
+      <img border="0" src="diagram/Gremlin.png" height="70" width="490" usemap="#Gremlin.map"><map name="Gremlin.map">
+         <area shape="rect" coords="29,35,187,67" href="#GraphTraversalSource" title="GraphTraversalSource">
+         <area shape="rect" coords="227,1,343,33" href="#GraphTraversal" title="GraphTraversal">
+         <area shape="rect" coords="383,35,461,67" href="#Traversal" title="Traversal"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#Gremlin" title="Gremlin" shape="rect">Gremlin</a>  ::= <a href="#GraphTraversalSource" title="GraphTraversalSource" shape="rect">GraphTraversalSource</a> <a href="#GraphTraversal" title="GraphTraversal" shape="rect">GraphTraversal</a>* <a href="#Traversal" title="Traversal" shape="rect">Traversal</a></pre></div>
+         
+      </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="GraphTraversalSource">GraphTraversalSource:</a></p>
+      <img border="0" src="diagram/GraphTraversalSource.png" height="554" width="344" usemap="#GraphTraversalSource.map"><map name="GraphTraversalSource.map">
+         <area shape="rect" coords="49,353,149,385" href="#withBindings" title="withBindings">
+         <area shape="rect" coords="49,309,121,341" href="#withBulk" title="withBulk">
+         <area shape="rect" coords="49,265,157,297" href="#withComputer" title="withComputer">
+         <area shape="rect" coords="49,221,181,253" href="#withoutStrategies" title="withoutStrategies">
+         <area shape="rect" coords="49,177,125,209" href="#withPath" title="withPath">
+         <area shape="rect" coords="49,133,143,165" href="#withRemote" title="withRemote">
+         <area shape="rect" coords="49,89,125,121" href="#withSack" title="withSack">
+         <area shape="rect" coords="49,45,157,77" href="#withSideEffect" title="withSideEffect">
+         <area shape="rect" coords="49,1,161,33" href="#withStrategies" title="withStrategies">
+         <area shape="rect" coords="241,387,293,419" href="#addV" title="addV">
+         <area shape="rect" coords="241,431,269,463" href="#E" title="E">
+         <area shape="rect" coords="241,475,295,507" href="#inject" title="inject">
+         <area shape="rect" coords="241,519,269,551" href="#V" title="V"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#GraphTraversalSource" title="GraphTraversalSource" shape="rect">GraphTraversalSource</a>
+         ::= ( <a href="#withBindings" title="withBindings" shape="rect">withBindings</a> | <a href="#withBulk" title="withBulk" shape="rect">withBulk</a> | <a href="#withComputer" title="withComputer" shape="rect">withComputer</a> | <a href="#withoutStrategies" title="withoutStrategies" shape="rect">withoutStrategies</a> | <a href="#withPath" title="withPath" shape="rect">withPath</a> | <a href="#withRemote" title="withRemote" shape="rect">withRemote</a> | <a href="#withSack" title="withSack" shape="rect">withSack</a> | <a href="#withSideEffect" title="withSideEffect" shape="rect">withSideEffect</a> | <a href="#withStrategies" title="withStrategies" shape="rect">withStrategies</a> )* ( <a href="#addV" title="addV" shape="rect">addV</a> | <a href="#E" title="E" shape="rect">E</a> | <a href="#inject" title="inject" shape="rect">inject</a> | <a href="#V" title="V" shape="rect">V</a> )</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Gremlin" title="Gremlin">Gremlin</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="GraphTraversal">GraphTraversal:</a></p>
+      <img border="0" src="diagram/GraphTraversal.png" height="3952" width="202" usemap="#GraphTraversal.map"><map name="GraphTraversal.map">
+         <area shape="rect" coords="49,1,101,33" href="#addE" title="addE">
+         <area shape="rect" coords="49,45,101,77" href="#addV" title="addV">
+         <area shape="rect" coords="49,89,135,121" href="#aggregate" title="aggregate">
+         <area shape="rect" coords="49,133,93,165" href="#and" title="and">
+         <area shape="rect" coords="49,177,83,209" href="#as" title="as">
+         <area shape="rect" coords="49,221,111,253" href="#barrier" title="barrier">
+         <area shape="rect" coords="49,265,97,297" href="#both" title="both">
+         <area shape="rect" coords="49,309,105,341" href="#bothE" title="bothE">
+         <area shape="rect" coords="49,353,105,385" href="#bothV" title="bothV">
+         <area shape="rect" coords="49,397,111,429" href="#branch" title="branch">
+         <area shape="rect" coords="49,441,83,473" href="#by" title="by">
+         <area shape="rect" coords="49,485,91,517" href="#cap" title="cap">
+         <area shape="rect" coords="49,529,113,561" href="#choose" title="choose">
+         <area shape="rect" coords="49,573,123,605" href="#coalesce" title="coalesce">
+         <area shape="rect" coords="49,617,93,649" href="#coin" title="coin">
+         <area shape="rect" coords="49,661,123,693" href="#constant" title="constant">
+         <area shape="rect" coords="49,705,103,737" href="#count" title="count">
+         <area shape="rect" coords="49,749,129,781" href="#cyclicPath" title="cyclicPath">
+         <area shape="rect" coords="49,793,109,825" href="#dedup" title="dedup">
+         <area shape="rect" coords="49,837,97,869" href="#drop" title="drop">
+         <area shape="rect" coords="49,881,95,913" href="#emit" title="emit">
+         <area shape="rect" coords="49,925,97,957" href="#filter" title="filter">
+         <area shape="rect" coords="49,969,115,1001" href="#flatMap" title="flatMap">
+         <area shape="rect" coords="49,1013,91,1045" href="#fold" title="fold">
+         <area shape="rect" coords="49,1057,97,1089" href="#from" title="from">
+         <area shape="rect" coords="49,1101,105,1133" href="#group" title="group">
+         <area shape="rect" coords="49,1145,143,1177" href="#groupCount" title="groupCount">
+         <area shape="rect" coords="49,1189,91,1221" href="#has" title="has">
+         <area shape="rect" coords="49,1233,105,1265" href="#hasId" title="hasId">
+         <area shape="rect" coords="49,1277,115,1309" href="#hasKey" title="hasKey">
+         <area shape="rect" coords="49,1321,125,1353" href="#hasLabel" title="hasLabel">
+         <area shape="rect" coords="49,1365,113,1397" href="#hasNot" title="hasNot">
+         <area shape="rect" coords="49,1409,127,1441" href="#hasValue" title="hasValue">
+         <area shape="rect" coords="49,1453,79,1485" href="#id" title="id">
+         <area shape="rect" coords="49,1497,115,1529" href="#identity" title="identity">
+         <area shape="rect" coords="49,1541,79,1573" href="#in" title="in">
+         <area shape="rect" coords="49,1585,87,1617" href="#inE" title="inE">
+         <area shape="rect" coords="49,1629,103,1661" href="#inject" title="inject">
+         <area shape="rect" coords="49,1673,87,1705" href="#inV" title="inV">
+         <area shape="rect" coords="49,1717,79,1749" href="#is" title="is">
+         <area shape="rect" coords="49,1761,91,1793" href="#key" title="key">
+         <area shape="rect" coords="49,1805,99,1837" href="#label" title="label">
+         <area shape="rect" coords="49,1849,93,1881" href="#limit" title="limit">
+         <area shape="rect" coords="49,1893,97,1925" href="#local" title="local">
+         <area shape="rect" coords="49,1937,103,1969" href="#loops" title="loops">
+         <area shape="rect" coords="49,1981,95,2013" href="#map" title="map">
+         <area shape="rect" coords="49,2025,107,2057" href="#match" title="match">
+         <area shape="rect" coords="49,2069,95,2101" href="#max" title="max">
+         <area shape="rect" coords="49,2113,103,2145" href="#mean" title="mean">
+         <area shape="rect" coords="49,2157,91,2189" href="#min" title="min">
+         <area shape="rect" coords="49,2201,89,2233" href="#not" title="not">
+         <area shape="rect" coords="49,2245,81,2277" href="#or" title="or">
+         <area shape="rect" coords="49,2289,103,2321" href="#order" title="order">
+         <area shape="rect" coords="49,2333,111,2365" href="#otherV" title="otherV">
+         <area shape="rect" coords="49,2377,89,2409" href="#out" title="out">
+         <area shape="rect" coords="49,2421,97,2453" href="#outE" title="outE">
+         <area shape="rect" coords="49,2465,97,2497" href="#outV" title="outV">
+         <area shape="rect" coords="49,2509,131,2541" href="#pageRank" title="pageRank">
+         <area shape="rect" coords="49,2553,97,2585" href="#path" title="path">
+         <area shape="rect" coords="49,2597,153,2629" href="#peerPressure" title="peerPressure">
+         <area shape="rect" coords="49,2641,121,2673" href="#program" title="program">
+         <area shape="rect" coords="49,2685,113,2717" href="#project" title="project">
+         <area shape="rect" coords="49,2729,133,2761" href="#properties" title="properties">
+         <area shape="rect" coords="49,2773,123,2805" href="#property" title="property">
+         <area shape="rect" coords="49,2817,149,2849" href="#propertyMap" title="propertyMap">
+         <area shape="rect" coords="49,2861,105,2893" href="#range" title="range">
+         <area shape="rect" coords="49,2905,111,2937" href="#repeat" title="repeat">
+         <area shape="rect" coords="49,2949,97,2981" href="#sack" title="sack">
+         <area shape="rect" coords="49,2993,113,3025" href="#sample" title="sample">
+         <area shape="rect" coords="49,3037,105,3069" href="#select" title="select">
+         <area shape="rect" coords="49,3081,129,3113" href="#sideEffect" title="sideEffect">
+         <area shape="rect" coords="49,3125,137,3157" href="#simplePath" title="simplePath">
+         <area shape="rect" coords="49,3169,101,3201" href="#store" title="store">
+         <area shape="rect" coords="49,3213,129,3245" href="#subgraph" title="subgraph">
+         <area shape="rect" coords="49,3257,95,3289" href="#sum" title="sum">
+         <area shape="rect" coords="49,3301,87,3333" href="#tail" title="tail">
+         <area shape="rect" coords="49,3345,125,3377" href="#timeLimit" title="timeLimit">
+         <area shape="rect" coords="49,3389,103,3421" href="#times" title="times">
+         <area shape="rect" coords="49,3433,81,3465" href="#to" title="to">
+         <area shape="rect" coords="49,3477,89,3509" href="#toE" title="toE">
+         <area shape="rect" coords="49,3521,89,3553" href="#toV" title="toV">
+         <area shape="rect" coords="49,3565,95,3597" href="#tree" title="tree">
+         <area shape="rect" coords="49,3609,107,3641" href="#unfold" title="unfold">
+         <area shape="rect" coords="49,3653,103,3685" href="#union" title="union">
+         <area shape="rect" coords="49,3697,95,3729" href="#until" title="until">
+         <area shape="rect" coords="49,3741,77,3773" href="#V" title="V">
+         <area shape="rect" coords="49,3785,103,3817" href="#value" title="value">
+         <area shape="rect" coords="49,3829,129,3861" href="#valueMap" title="valueMap">
+         <area shape="rect" coords="49,3873,109,3905" href="#values" title="values">
+         <area shape="rect" coords="49,3917,109,3949" href="#where" title="where"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#GraphTraversal" title="GraphTraversal" shape="rect">GraphTraversal</a>
+         ::= <a href="#addE" title="addE" shape="rect">addE</a>
+           | <a href="#addV" title="addV" shape="rect">addV</a>
+           | <a href="#aggregate" title="aggregate" shape="rect">aggregate</a>
+           | <a href="#and" title="and" shape="rect">and</a>
+           | <a href="#as" title="as" shape="rect">as</a>
+           | <a href="#barrier" title="barrier" shape="rect">barrier</a>
+           | <a href="#both" title="both" shape="rect">both</a>
+           | <a href="#bothE" title="bothE" shape="rect">bothE</a>
+           | <a href="#bothV" title="bothV" shape="rect">bothV</a>
+           | <a href="#branch" title="branch" shape="rect">branch</a>
+           | <a href="#by" title="by" shape="rect">by</a>
+           | <a href="#cap" title="cap" shape="rect">cap</a>
+           | <a href="#choose" title="choose" shape="rect">choose</a>
+           | <a href="#coalesce" title="coalesce" shape="rect">coalesce</a>
+           | <a href="#coin" title="coin" shape="rect">coin</a>
+           | <a href="#constant" title="constant" shape="rect">constant</a>
+           | <a href="#count" title="count" shape="rect">count</a>
+           | <a href="#cyclicPath" title="cyclicPath" shape="rect">cyclicPath</a>
+           | <a href="#dedup" title="dedup" shape="rect">dedup</a>
+           | <a href="#drop" title="drop" shape="rect">drop</a>
+           | <a href="#emit" title="emit" shape="rect">emit</a>
+           | <a href="#filter" title="filter" shape="rect">filter</a>
+           | <a href="#flatMap" title="flatMap" shape="rect">flatMap</a>
+           | <a href="#fold" title="fold" shape="rect">fold</a>
+           | <a href="#from" title="from" shape="rect">from</a>
+           | <a href="#group" title="group" shape="rect">group</a>
+           | <a href="#groupCount" title="groupCount" shape="rect">groupCount</a>
+           | <a href="#has" title="has" shape="rect">has</a>
+           | <a href="#hasId" title="hasId" shape="rect">hasId</a>
+           | <a href="#hasKey" title="hasKey" shape="rect">hasKey</a>
+           | <a href="#hasLabel" title="hasLabel" shape="rect">hasLabel</a>
+           | <a href="#hasNot" title="hasNot" shape="rect">hasNot</a>
+           | <a href="#hasValue" title="hasValue" shape="rect">hasValue</a>
+           | <a href="#id" title="id" shape="rect">id</a>
+           | <a href="#identity" title="identity" shape="rect">identity</a>
+           | <a href="#in" title="in" shape="rect">in</a>
+           | <a href="#inE" title="inE" shape="rect">inE</a>
+           | <a href="#inject" title="inject" shape="rect">inject</a>
+           | <a href="#inV" title="inV" shape="rect">inV</a>
+           | <a href="#is" title="is" shape="rect">is</a>
+           | <a href="#key" title="key" shape="rect">key</a>
+           | <a href="#label" title="label" shape="rect">label</a>
+           | <a href="#limit" title="limit" shape="rect">limit</a>
+           | <a href="#local" title="local" shape="rect">local</a>
+           | <a href="#loops" title="loops" shape="rect">loops</a>
+           | <a href="#map" title="map" shape="rect">map</a>
+           | <a href="#match" title="match" shape="rect">match</a>
+           | <a href="#max" title="max" shape="rect">max</a>
+           | <a href="#mean" title="mean" shape="rect">mean</a>
+           | <a href="#min" title="min" shape="rect">min</a>
+           | <a href="#not" title="not" shape="rect">not</a>
+           | <a href="#or" title="or" shape="rect">or</a>
+           | <a href="#order" title="order" shape="rect">order</a>
+           | <a href="#otherV" title="otherV" shape="rect">otherV</a>
+           | <a href="#out" title="out" shape="rect">out</a>
+           | <a href="#outE" title="outE" shape="rect">outE</a>
+           | <a href="#outV" title="outV" shape="rect">outV</a>
+           | <a href="#pageRank" title="pageRank" shape="rect">pageRank</a>
+           | <a href="#path" title="path" shape="rect">path</a>
+           | <a href="#peerPressure" title="peerPressure" shape="rect">peerPressure</a>
+           | <a href="#program" title="program" shape="rect">program</a>
+           | <a href="#project" title="project" shape="rect">project</a>
+           | <a href="#properties" title="properties" shape="rect">properties</a>
+           | <a href="#property" title="property" shape="rect">property</a>
+           | <a href="#propertyMap" title="propertyMap" shape="rect">propertyMap</a>
+           | <a href="#range" title="range" shape="rect">range</a>
+           | <a href="#repeat" title="repeat" shape="rect">repeat</a>
+           | <a href="#sack" title="sack" shape="rect">sack</a>
+           | <a href="#sample" title="sample" shape="rect">sample</a>
+           | <a href="#select" title="select" shape="rect">select</a>
+           | <a href="#sideEffect" title="sideEffect" shape="rect">sideEffect</a>
+           | <a href="#simplePath" title="simplePath" shape="rect">simplePath</a>
+           | <a href="#store" title="store" shape="rect">store</a>
+           | <a href="#subgraph" title="subgraph" shape="rect">subgraph</a>
+           | <a href="#sum" title="sum" shape="rect">sum</a>
+           | <a href="#tail" title="tail" shape="rect">tail</a>
+           | <a href="#timeLimit" title="timeLimit" shape="rect">timeLimit</a>
+           | <a href="#times" title="times" shape="rect">times</a>
+           | <a href="#to" title="to" shape="rect">to</a>
+           | <a href="#toE" title="toE" shape="rect">toE</a>
+           | <a href="#toV" title="toV" shape="rect">toV</a>
+           | <a href="#tree" title="tree" shape="rect">tree</a>
+           | <a href="#unfold" title="unfold" shape="rect">unfold</a>
+           | <a href="#union" title="union" shape="rect">union</a>
+           | <a href="#until" title="until" shape="rect">until</a>
+           | <a href="#V" title="V" shape="rect">V</a>
+           | <a href="#value" title="value" shape="rect">value</a>
+           | <a href="#valueMap" title="valueMap" shape="rect">valueMap</a>
+           | <a href="#values" title="values" shape="rect">values</a>
+           | <a href="#where" title="where" shape="rect">where</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Gremlin" title="Gremlin">Gremlin</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Traversal">Traversal:</a></p>
+      <img border="0" src="diagram/Traversal.png" height="476" width="230" usemap="#Traversal.map"><map name="Traversal.map">
+         <area shape="rect" coords="49,1,101,33" href="#close" title="close">
+         <area shape="rect" coords="49,45,113,77" href="#explain" title="explain">
+         <area shape="rect" coords="49,89,81,121" href="#fill" title="fill">
+         <area shape="rect" coords="49,133,181,165" href="#forEachRemaining" title="forEachRemaining">
+         <area shape="rect" coords="49,177,111,209" href="#iterate" title="iterate">
+         <area shape="rect" coords="49,221,97,253" href="#next" title="next">
+         <area shape="rect" coords="49,265,107,297" href="#profile" title="profile">
+         <area shape="rect" coords="49,309,103,341" href="#toList" title="toList">
+         <area shape="rect" coords="49,353,103,385" href="#toSet" title="toSet">
+         <area shape="rect" coords="49,397,127,429" href="#toStream" title="toStream">
+         <area shape="rect" coords="49,441,115,473" href="#tryNext" title="tryNext"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#Traversal" title="Traversal" shape="rect">Traversal</a>
+         ::= <a href="#close" title="close" shape="rect">close</a>
+           | <a href="#explain" title="explain" shape="rect">explain</a>
+           | <a href="#fill" title="fill" shape="rect">fill</a>
+           | <a href="#forEachRemaining" title="forEachRemaining" shape="rect">forEachRemaining</a>
+           | <a href="#iterate" title="iterate" shape="rect">iterate</a>
+           | <a href="#next" title="next" shape="rect">next</a>
+           | <a href="#profile" title="profile" shape="rect">profile</a>
+           | <a href="#toList" title="toList" shape="rect">toList</a>
+           | <a href="#toSet" title="toSet" shape="rect">toSet</a>
+           | <a href="#toStream" title="toStream" shape="rect">toStream</a>
+           | <a href="#tryNext" title="tryNext" shape="rect">tryNext</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Gremlin" title="Gremlin">Gremlin</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="addV">addV:</a></p>
+      <img border="0" src="diagram/addV.png" height="156" width="374" usemap="#addV.map"><map name="addV.map">
+         <area shape="rect" coords="95,33,145,65" href="#label" title="label">
+         <area shape="rect" coords="251,33,303,65" href="#addE" title="addE">
+         <area shape="rect" coords="251,77,285,109" href="#as" title="as">
+         <area shape="rect" coords="251,121,325,153" href="#property" title="property"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#addV" title="addV" shape="rect">addV</a>     ::= '(' <a href="#label" title="label" shape="rect">label</a>? ')' ( <a href="#addE" title="addE" shape="rect">addE</a> | <a href="#as" title="as" shape="rect">as</a> | <a href="#property" title="property" shape="rect">property</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#GraphTraversalSource" title="GraphTraversalSource">GraphTraversalSource</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="addE">addE:</a></p>
+      <img border="0" src="diagram/addE.png" height="200" width="374" usemap="#addE.map"><map name="addE.map">
+         <area shape="rect" coords="95,33,145,65" href="#label" title="label">
+         <area shape="rect" coords="251,33,285,65" href="#as" title="as">
+         <area shape="rect" coords="251,77,299,109" href="#from" title="from">
+         <area shape="rect" coords="251,121,283,153" href="#to" title="to">
+         <area shape="rect" coords="251,165,325,197" href="#property" title="property"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#addE" title="addE" shape="rect">addE</a>     ::= '(' <a href="#label" title="label" shape="rect">label</a>? ')' ( <a href="#as" title="as" shape="rect">as</a> | <a href="#from" title="from" shape="rect">from</a> | <a href="#to" title="to" shape="rect">to</a> | <a href="#property" title="property" shape="rect">property</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#V" title="V">V</a></li>
+            
+            <li><a href="#addV" title="addV">addV</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="E">E:</a></p>
+      <img border="0" src="diagram/E.png" height="190" width="362" usemap="#E.map"><map name="E.map">
+         <area shape="rect" coords="95,1,133,33" href="#ids" title="ids">
+         <area shape="rect" coords="239,67,273,99" href="#as" title="as">
+         <area shape="rect" coords="239,111,287,143" href="#drop" title="drop">
+         <area shape="rect" coords="239,155,313,187" href="#property" title="property"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#E" title="E" shape="rect">E</a>        ::= '(' <a href="#ids" title="ids" shape="rect">ids</a>* ')' ( <a href="#as" title="as" shape="rect">as</a> | <a href="#drop" title="drop" shape="rect">drop</a> | <a href="#property" title="property" shape="rect">property</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversalSource" title="GraphTraversalSource">GraphTraversalSource</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="V">V:</a></p>
+      <img border="0" src="diagram/V.png" height="278" width="362" usemap="#V.map"><map name="V.map">
+         <area shape="rect" coords="95,1,133,33" href="#ids" title="ids">
+         <area shape="rect" coords="239,67,291,99" href="#addE" title="addE">
+         <area shape="rect" coords="239,111,273,143" href="#as" title="as">
+         <area shape="rect" coords="239,155,287,187" href="#drop" title="drop">
+         <area shape="rect" coords="239,199,279,231" href="#out" title="out">
+         <area shape="rect" coords="239,243,313,275" href="#property" title="property"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#V" title="V" shape="rect">V</a>        ::= '(' <a href="#ids" title="ids" shape="rect">ids</a>* ')' ( <a href="#addE" title="addE" shape="rect">addE</a> | <a href="#as" title="as" shape="rect">as</a> | <a href="#drop" title="drop" shape="rect">drop</a> | <a href="#out" title="out" shape="rect">out</a> | <a href="#property" title="property" shape="rect">property</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#GraphTraversalSource" title="GraphTraversalSource">GraphTraversalSource</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="as">as:</a></p>
+      <img border="0" src="diagram/as.png" height="36" width="232" usemap="#as.map"><map name="as.map">
+         <area shape="rect" coords="75,1,157,33" href="#step-label" title="step-label"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#as" title="as" shape="rect">as</a>       ::= '(' <a href="#step-label" title="step-label" shape="rect">step-label</a> ')'</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#E" title="E">E</a></li>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#V" title="V">V</a></li>
+            
+            <li><a href="#addE" title="addE">addE</a></li>
+            
+            <li><a href="#addV" title="addV">addV</a></li>
+            
+            <li><a href="#edge-steps" title="edge-steps">edge-steps</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="from">from:</a></p>
+      <img border="0" src="diagram/from.png" height="68" width="384" usemap="#from.map"><map name="from.map">
+         <area shape="rect" coords="75,1,157,33" href="#step-label" title="step-label">
+         <area shape="rect" coords="243,33,335,65" href="#edge-steps" title="edge-steps"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#from" title="from" shape="rect">from</a>     ::= '(' <a href="#step-label" title="step-label" shape="rect">step-label</a> ')' <a href="#edge-steps" title="edge-steps" shape="rect">edge-steps</a>?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#addE" title="addE">addE</a></li>
+            
+            <li><a href="#edge-steps" title="edge-steps">edge-steps</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="to">to:</a></p>
+      <img border="0" src="diagram/to.png" height="68" width="384" usemap="#to.map"><map name="to.map">
+         <area shape="rect" coords="75,1,157,33" href="#step-label" title="step-label">
+         <area shape="rect" coords="243,33,335,65" href="#edge-steps" title="edge-steps"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#to" title="to" shape="rect">to</a>       ::= '(' <a href="#step-label" title="step-label" shape="rect">step-label</a> ')' <a href="#edge-steps" title="edge-steps" shape="rect">edge-steps</a>?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#GraphTraversal" title="GraphTraversal">GraphTraversal</a></li>
+            
+            <li><a href="#addE" title="addE">addE</a></li>
+            
+            <li><a href="#edge-steps" title="edge-steps">edge-steps</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="edge-steps">edge-steps:</a></p>
+      <img border="0" src="diagram/edge-steps.png" height="188" width="172" usemap="#edge-steps.map"><map name="edge-steps.map">
+         <area shape="rect" coords="49,21,83,53" href="#as" title="as">
+         <area shape="rect" coords="49,65,97,97" href="#from" title="from">
+         <area shape="rect" coords="49,109,81,141" href="#to" title="to">
+         <area shape="rect" coords="49,153,123,185" href="#property" title="property"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#edge-steps" title="edge-steps" shape="rect">edge-steps</a>
+         ::= ( <a href="#as" title="as" shape="rect">as</a> | <a href="#from" title="from" shape="rect">from</a> | <a href="#to" title="to" shape="rect">to</a> | <a href="#property" title="property" shape="rect">property</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#from" title="from">from</a></li>
+            
+            <li><a href="#to" title="to">to</a></li>
+            
+         </ul>
+         
+      </p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui" target="_blank">Railroad Diagram Generator</a></nobr>
+                  
+               </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui" target="_blank">
+                     <img border="0" src="diagram/rr-1.45.1338.png" height="16" width="16"></a></td>
+               
+            </tr>
+            
+         </table>
+         
+      </p>
+      
+   </body>
+</html>

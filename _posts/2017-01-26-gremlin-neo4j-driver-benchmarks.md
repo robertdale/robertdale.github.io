@@ -8,14 +8,22 @@ layout: post
 
 Neo4j Embedded Vs. Bolt (remote) driver Vs. Gremlin Server (remote, embedded)
 
+The advantages of running embedded is that all of the data is local, it's very fast,
+and many of the conversions required with gremlin remote client aren't necessary.
+The biggest disavantage is that no maintenance or external access
+is possible without taking down the application and starting either neo4j
+server, gremlin console (with embedded neo4j), or gremlin server on top of
+that database. If you want to maintain a running application and have
+some sort of external access, there must be some sort of external server whether its neo4j standalone or gremlin server.  
+Thus, your only two options are gremlin server and gremlin bolt driver (neo4j v3+).
+
 # Configurations
 
-Hardware: Intel(R) Core(TM) i7-4900MQ CPU @ 2.80GHz, 8 cores, 32GB RAM, 500GB SSD, ext4 FS
+Hardware: Intel(R) Core(TM) i7-4900MQ CPU @ 2.80GHz, 8 cores, 32GB RAM, 500GB SSD
 
 Neo4j embedded
 
 - gremlin-console
-- client is gremlin
 - neo4j-tinkerpop-api-impl v0.4-3.0.8
 - Neo4j v3.0.8
 - Gremlin v3.2.3

@@ -21,29 +21,27 @@ Thus, your only two options are gremlin server and gremlin bolt driver (neo4j v3
 
 Hardware: Intel(R) Core(TM) i7-4900MQ CPU @ 2.80GHz, 8 cores, 32GB RAM, 500GB SSD
 
+Gremlin: v3.2.3
+
+Neo4j: v3.0.8
+
 Neo4j embedded
 
 - gremlin-console
 - neo4j-tinkerpop-api-impl v0.4-3.0.8
-- Neo4j v3.0.8
-- Gremlin v3.2.3
 - :install org.neo4j neo4j-tinkerpop-api-impl 0.4-3.0.8
 
 Neo4j bolt
 
-- [neo4j-gremlin-bolt v0.2.16](https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt)
-- Neo4j remote
-- client is bolt driver
+- Neo4j remote server
 - bolt v1.1.0
-- gremlin v3.2.3
+- [neo4j-gremlin-bolt v0.2.16](https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt)
 - :install com.steelbridgelabs.oss neo4j-gremlin-bolt 0.2.16
 
-gremlin-server 3.2.3
+gremlin-server
 
 - Gremlin server remote
 - Neo4j embedded in server
-- Neo4j v3.0.8
-- Gremlin v3.2.3
 - -i org.neo4j neo4j-tinkerpop-api-impl 0.4-3.0.8
 - -i org.apache.tinkerpop neo4j-gremlin 3.2.3
 
